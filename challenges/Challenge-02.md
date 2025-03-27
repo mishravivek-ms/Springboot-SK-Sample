@@ -61,43 +61,6 @@ In this challenge, you will be provided with a starter application that will req
 
     :pushpin:  The kernel itself doesn't expose AI functionality directly - instead, it manages services that do. When we want to send messages to the AI, we need to obtain a reference to the chat service specifically from the kernel's dependency injection container (kernel.Services). That's why we use GetRequiredService to get an IChatCompletionService from the kernel, which we'll use to handle our actual AI conversations.
 
-### Implement SendMessage Method
-
-1. Implement the `SendMessage` Method. Navigate to kernelUtil class and navigate to kernelBuilder method.
-
-    ```Java
-    public Kernel kernelBuilder(List<KernelPlugin> plugins) throws IOException {
-        // Challenge 2 for Create the client
-        
-        
-        
-    ```
-    ```Java
-    public String SendMessage(String input) throws IOException, ServiceNotFoundException {
-
-        Kernel kernel = kernelUtil.kernelBuilder(null);
-        
-        
-    ```
-    1. Add the **user's message** to the chat history collection.
-
-        In the `kernelUtil.java` file, find the `kernelBuilder` method. Below the comment `//Challenge 2 
-
-       :pushpin: The chat history maintains a record of the conversation between user and AI. By adding each message to this history, we give the AI context about the ongoing conversation, allowing it to provide more relevant and coherent responses.
-
-       :bulb: For a detailed explanation of Chat History, please refer to the documentation [here](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/?tabs=csharp-AzureOpenAI%2Cpython-AzureOpenAI%2Cjava-AzureOpenAI&pivots=programming-language-java#non-streaming-chat-completion).
-
-    1. Use the Chat Completion service to complete the implementation of the `SendMessage` method by sending the entire chat history, including the latest prompt, to the Azure AI Foundry chat service. Once the service processes this and generates a response, wait until the full response is received before sending it back to the client.
-
-       :bulb: Refer to the Semantic Kernel documentation [here](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/?tabs=csharp-AzureOpenAI%2Cpython-AzureOpenAI%2Cjava-AzureOpenAI&pivots=programming-language-java#non-streaming-chat-completion) for an example of how to call the chat completion service.
-
-    1. Now add the **AI's Response** *Content* to the Chat History collection.
-
-        Once you have the response back from the chat service, you'll need to add the text of this response to the UI so your user can see it. We've already wired up the UI to read the data from the Chat History object that you've added the **user's message** to above. We can add the AI's response to this same collection as an **Assistant** message to ensure the user knows the message came from the AI.
-
-       :pushpin: We add both user messages and AI responses to the same chat history collection, but with different roles (User vs Assistant). This maintains the conversation context for future AI responses.
-
-       :bulb: To see how the ChatHistory object works in detail, see the documentation [here](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/chat-history?pivots=programming-language-java#creating-a-chat-history-object)
 
 ### Testing
 
