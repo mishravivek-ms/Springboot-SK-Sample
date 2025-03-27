@@ -21,7 +21,7 @@ In this challenge, you will be provided with a starter application that will req
 1. Deploy a GTP-4o model using  [Azure AI Foundry Studio](https://ai.azure.com) `https://ai.azure.com`. The **Deployment name** should be something similar to ``` gpt-4o ```. This name will be needed next when configuring Semantic Kernel. :exclamation: Deployment type should be **Standard**. :exclamation:
 2. Open the terminal or powershell. Navigate to code checkout directory and open the project in your favorite IDE. For example, if you are using Visual Studio Code, run the following commands:  
     ```bash
-        cd .\springboot_sk_rest_ai_tutorial\
+        cd .\Springboot-SK-Sample\
         code .
     ```
 4. If you are using Visual Studio code or IntelliJ, open terminal Copy the TEMP file as PROPERTIES file
