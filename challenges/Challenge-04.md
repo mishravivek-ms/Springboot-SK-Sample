@@ -1,4 +1,4 @@
-### [< Previous Challenge](./Challenge-04.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-06.md)
+### [< Previous Challenge](./Challenge-04.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-05.md)
 
 # Challenge 04 -  Retrieval-Augmented Generation (RAG)
 
