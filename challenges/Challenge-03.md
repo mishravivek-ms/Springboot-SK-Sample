@@ -18,7 +18,7 @@ Continuing from the previous challenge, navigate to the application and open the
 
 Challenges:
 
-* Use the previous URL (Chapter 2) and submit the prompt 
+* Use the previous URL (http://localhost:8080/api/chapter2) and submit the prompt 
 
   ```json
     {
@@ -34,7 +34,7 @@ Challenges:
 
     Let's fix this by creating a plugin that can provide the current time and other related information.
 
-* **Create a new class in *./Plugins* directory for your Time Plugin**. You can reference the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-java#defining-a-plugin-using-a-class) for more information on how to create a plugin using a class.
+* **Verify a new class in *./Plugins* directory for your Time Plugin**. You can reference the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-java#defining-a-plugin-using-a-class) for more information on how to create a plugin using a class.
   * Write a time plugin with the following functions:
     1. Return the current Date
     1. Return the current Time
