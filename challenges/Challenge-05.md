@@ -73,9 +73,11 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
     1. Grab the **Key** from the Keys section.
     1. Add these values to the **appsettings.json** file in the reference application. You will need these values later when configuring AI Search.
 
-    ```json
-      "AI_SEARCH_URL": "Replace with your AI Search URI",
-      "AI_SEARCH_KEY": "Replace with your AI Search API Key"
+    ```bash
+      client.azure.search.endpoint=
+      client.azure.search.index=
+      client.azure.search.adminkey=
+      client.azure.search.embedding.deployment=
     ```
 
     :bulb: The AI Search URL and Key will be used to configure the AI Search Connector in the Semantic Search Plugin.
@@ -180,32 +182,13 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
 
     :bulb: Review the Semantic Kernel documentation on [Creating a Retrieval Augmented Generation (RAG) plugin](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/using-data-retrieval-functions-for-rag) for more information on how to create a ***Semantic Search*** Plugin.
 
-1. The Sample RAG Plugin in the documentation maps the incoming data from AI Search to a class named ```IndexSchema```. Replace this class with the following code:
+1. The Sample RAG Plugin in the documentation maps the incoming data from AI Search to a class named ```chapter4```. 
 
-    ```csharp
-    private sealed class IndexSchema
-    {
-        [JsonPropertyName("content")]
-        public string Content { get; set; }
-
-        [JsonPropertyName("title")]
-        public string Title { get; set; }
-
-        [JsonPropertyName("url")]
-        public string Url { get; set; }
-    }
-    ```
-
-    The properties on this class map to fields in the AI Search Index we created earlier. In the portal, you can navigate to the AI Search Index and see the fields that are available.
-    ![AI Search](./Resources/images/ch0506.png)
 
     :bulb: Note that the vector field to search is named ```contentVector``` but the sample code from the documentation uses ```vector```, **you will need to update the code to use the correct field name.**
 
     :bulb: Also remember that our index name is different than the sample code. Update the searchClient like this code. 
 
-    ```CSharp
-    SearchClient searchClient = _indexClient.GetSearchClient("employeehandbook");
-    ```
 
 1. Update the KernelFunction attribute to better help Semantic Kernel know when to call your function.
 
