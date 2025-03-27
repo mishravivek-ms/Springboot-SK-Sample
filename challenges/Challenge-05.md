@@ -1,6 +1,6 @@
 ### [< Previous Challenge](./Challenge-04.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-06.md)
 
-# Challenge 05 -  Retrieval-Augmented Generation (RAG)
+# Challenge 04 -  Retrieval-Augmented Generation (RAG)
 
 ## Some Background (optional)
 

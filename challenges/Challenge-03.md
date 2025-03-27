@@ -10,6 +10,7 @@ Completed [Challenge 02](./Challenge-02.md) and have a functional version of the
 
 Semantic Kernel truly shines in LLM development when you incorporate plugins. These plugins extend the AI's capabilities and provide access to additional knowledge that cannot be built directly into the model through training. Things such as time sensitive data, user specific information, and esoteric knowledge are all areas where the Plugin model can greatly improve the capabilities of your AI. In this challenge, you will implement a time plugin, and a plugin that retrieves the weather for a location to extend the capabilities of your chat bot.
 
+
 ## Description
 
 This challenge will introduce you to building Semantic Kernel Plugins in JAVA, and how to chain plugins using the Auto Function Calling capabilities of Semantic Kernel.
@@ -198,4 +199,4 @@ Too comfortable?  Eager to do more?  Try these additional challenges!
 
 * Look for APIs that are either current event related - such as  events and calendars - or something with esoteric knowledge that the AI does poorly with, such as the UPC database, or something like the [PokeAPI - Pokemon Pokedex API](https://pokeapi.co/docs/v2).
 
-### [< Previous Challenge](./Challenge-02.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-04.md)
+### [< Previous Challenge](./Challenge-02.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-05.md)
