@@ -54,7 +54,14 @@ In this challenge, you will be provided with a starter application that will req
     ```bash
         server.port=8081
     ```
-6. Locate the file name "chapter2.java(src/main/java/com/sk/chapters/chapter2.java).
+6. For starting the FrontEnd, open a new terminal and take following steps
+    ```bash
+        cd frontend
+        npm install
+        npm run dev
+    ```
+6. Once the ReactJS is start, use [http://localhost:3000/](http://localhost:3000/)
+6. Locate the file name "chapter2.java(src/main/java/com/sk/chapters/mainChapter.java).
 7. Search code comment `//  Chat Completion Service` in the `chapter2.java` file.
 
     :bulb: [Retrieving chat completion services](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/?tabs=csharp-AzureOpenAI%2Cpython-AzureOpenAI%2Cjava-AzureOpenAI&pivots=programming-language-java#retrieving-chat-completion-services)

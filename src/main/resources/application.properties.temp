@@ -1,4 +1,4 @@
-spring.application.name=SpringAISample
+spring.application.name=SprintAI
 spring.ai.azure.openai.api-key=
 spring.ai.azure.openai.endpoint=
 spring.ai.azure.openai.chat.deployment-name=gpt-4
