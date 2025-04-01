@@ -59,10 +59,21 @@ Participants will learn how to:
   - Creating Semantic Kernel Plugins
   - Enable auto function calling
   - What is a Planner
-- [Challenge 04](challenges/Challenge-04.md): Retrieval-Augmented Generation (RAG)
+- [Challenge 04](challenges/Challenge-04.md): Import Plugin using OpenAPI
+  - Import API using OpenAPI Specification into Semantic Kernel
+- [Challenge 05](challenges/Challenge-05.md): Retrieval-Augmented Generation (RAG)
   - Document Chunking & Embedding
   - Enhance AI responses by searching external sources
-- [Challenge 05](challenges/Challenge-05.md): Plugin using prompt
+- [Challenge 06](challenges/Challenge-06.md): Responsible AI: Exploring Content Filters in Azure AI Foundry
+  - Configuring content filters in Azure AI Foundry Studio.
+  - Testing content filters.
+  - Creating custom filters to block specific words or phrases.
+- [Challenge 07](challenges/Challenge-07.md): Image Generation using DALL-E
+  - Working with Text to Image Models
+  - Creating an Image Generating Plugin
+- [Challenge 08](challenges/Challenge-08.md): Multi-Agent Systems
+  - Create a multi-agent conversation using Semantic Kernel
+  - Implement a multi-agent conversation using Azure AI Foundry
   
 ## Contributors
 
