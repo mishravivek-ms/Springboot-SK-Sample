@@ -59,11 +59,10 @@ Participants will learn how to:
   - Creating Semantic Kernel Plugins
   - Enable auto function calling
   - What is a Planner
-- [Challenge 04](challenges/Challenge-04.md): Import Plugin using OpenAPI
-  - Import API using OpenAPI Specification into Semantic Kernel
-- [Challenge 05](challenges/Challenge-05.md): Retrieval-Augmented Generation (RAG)
+- [Challenge 04](challenges/Challenge-04.md): Retrieval-Augmented Generation (RAG)
   - Document Chunking & Embedding
   - Enhance AI responses by searching external sources
+- [Challenge 05](challenges/Challenge-05.md): Plugin using prompt
   
 ## Contributors
 

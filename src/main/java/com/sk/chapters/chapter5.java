@@ -16,14 +16,12 @@ package com.sk.chapters;
         import org.springframework.beans.factory.annotation.Autowired;
         import org.springframework.stereotype.Component;
         import org.springframework.web.client.RestTemplate;
-        import org.springframework.web.context.annotation.SessionScope;
 
         import java.io.IOException;
         import java.nio.file.Path;
         import java.util.List;
 
         @Component
-        @SessionScope
         public class chapter5 {
 
             private final kernelUtil kernelUtil;
