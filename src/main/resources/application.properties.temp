@@ -15,6 +15,7 @@ client.azure.search.endpoint=
 client.azure.search.index=
 client.azure.search.adminkey=
 client.azure.search.embedding.deployment=
+server.servlet.session.tracking-modes=cookie
 
 
 
