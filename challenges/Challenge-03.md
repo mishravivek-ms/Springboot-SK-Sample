@@ -19,12 +19,10 @@ Continuing from the previous challenge, navigate to the application and open the
 
 Challenges:
 
-* Use the previous URL (http://localhost:8080/api/chapter2) and submit the prompt 
+* Use the previous and submit the prompt 
 
-  ```json
-    {
-	    "message": "Why is current time in Austin"
-    }
+  ```text
+    Why is current time in Austin
   ```
   
   Since the AI does not have the capability to provide real-time information, you will get a response similar to the following:

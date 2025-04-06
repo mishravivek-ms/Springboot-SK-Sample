@@ -1,17 +1,24 @@
 package com.sk.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+public class Message {
 
-public class MessageRequest {
-
-    private String message;
+    private String role;
+    private String content;
 
     // Getter and Setter
-    public String getMessage() {
-        return message;
+    public String getRole() {
+        return role;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }

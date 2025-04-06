@@ -61,7 +61,7 @@ In this challenge, you will be provided with a starter application that will req
         npm run dev
     ```
 6. Once the ReactJS is start, use [http://localhost:3000/](http://localhost:3000/)
-6. Locate the file name "chapter2.java(src/main/java/com/sk/chapters/mainChapter.java).
+6. Locate the file name "mainChapter.java(src/main/java/com/sk/chapters/mainChapter.java).
 7. Search code comment `//  Chat Completion Service` in the `chapter2.java` file.
 
     :bulb: [Retrieving chat completion services](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/?tabs=csharp-AzureOpenAI%2Cpython-AzureOpenAI%2Cjava-AzureOpenAI&pivots=programming-language-java#retrieving-chat-completion-services)
@@ -72,13 +72,11 @@ In this challenge, you will be provided with a starter application that will req
 ### Testing
 
 1. Run the application and test the chat completion by submitting the prompt:
-2. Use Postman or any API services. http://localhost:8080/api/chapter2
-3. Use POST method and add the following JSON body:
+2. Use this link. [http://localhost:3000/](http://localhost:3000/)
 
-    ```json
-    {
-	    "message": "Why Sun is RED"
-    }
+
+    ```text
+    Why Sun is RED
     ```
     :bulb: For more information on the Semantic Kernel, refer to the documentation [here](https://learn.microsoft.com/en-us/semantic-kernel/concepts/kernel?pivots=programming-language-java).
 
