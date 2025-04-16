@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:3000", "https://vf51bphf.usw3.devtunnels.ms:3000")
+                        .allowedOrigins("http://localhost:3000")
                         //.allowedOrigins("*") // Allow all origins
                         //.allowedHeaders("*")
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
