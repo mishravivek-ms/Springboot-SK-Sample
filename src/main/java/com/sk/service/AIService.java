@@ -9,7 +9,7 @@ import com.sk.chapters.chapter2;
 import com.sk.chapters.chapter3;
 import com.sk.chapters.chapter4;
 import com.sk.chapters.chapter5;
-import com.sk.chapters.mainChapter;
+
 
 @Service
 public class AIService {
@@ -24,17 +24,17 @@ public class AIService {
 
     private final chapter5 chapter5;
 
-    private final mainChapter mainChapter;
+
 
 
     @Autowired
-    public AIService(chapter2 chapter2, chapter3 chapter3, chapter4 chapter4, chapter5 chapter5, mainChapter mainChapter) {
+    public AIService(chapter2 chapter2, chapter3 chapter3, chapter4 chapter4, chapter5 chapter5) {
         //this.chatModel = chatModel;
         this.chapter2 = chapter2;
         this.chapter3 = chapter3;
         this.chapter4 = chapter4;
         this.chapter5 = chapter5;
-        this.mainChapter = mainChapter;
+
     }
 
 
@@ -54,7 +54,5 @@ public class AIService {
         return chapter5.sendMessage(message);
     }
 
-    public String chatResponse(String message) throws IOException, ServiceNotFoundException {
-        return mainChapter.SendMessage(message);
-    }
+
 }

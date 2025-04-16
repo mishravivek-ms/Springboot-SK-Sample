@@ -135,11 +135,11 @@ public class mainChapter {
                 .createFromObject(new AISearchPlugin(config,kernelUtil), "AISearchPlugin");
 
         // Challenge 05, Uncomment bellow line for food plugin and add the plugin to the list
-        KernelPlugin foodplugin = KernelPluginFactory
+       /* KernelPlugin foodplugin = KernelPluginFactory
                 .importPluginFromDirectory(Path.of("src/main/resources"),
-                        "promptconfig", null);
+                        "promptconfig", null);*/
 
-        Kernel kernel = kernelBuilder(List.of(dateTimePlugin,geoPlugin,weatherPlugin,AISearch,foodplugin));
+        Kernel kernel = kernelBuilder(List.of(dateTimePlugin,geoPlugin,weatherPlugin,AISearch/*,foodplugin*/));
         // Challenge 03 END
         return kernel;
     }
